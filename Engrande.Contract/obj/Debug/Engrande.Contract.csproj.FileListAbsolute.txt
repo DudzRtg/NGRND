@@ -1,0 +1,12 @@
+D:\BonFire Softwares\dotNet\BonfireSoftwares\Engrande\Engrande.Contract\bin\Debug\Engrande.Contract.dll
+D:\BonFire Softwares\dotNet\BonfireSoftwares\Engrande\Engrande.Contract\bin\Debug\Engrande.Contract.pdb
+D:\BonFire Softwares\dotNet\BonfireSoftwares\Engrande\Engrande.Contract\obj\Debug\Engrande.Contract.dll
+D:\BonFire Softwares\dotNet\BonfireSoftwares\Engrande\Engrande.Contract\obj\Debug\Engrande.Contract.pdb
+D:\BonFire Softwares\dotNet\BonfireSoftwares\Engrande\Engrande.Contract\bin\Debug\Engrande.Contract.dll.config
+D:\BonFire Softwares\dotNet\BonfireSoftwares\Engrande\Engrande.Contract\bin\Debug\EntityFramework.dll
+D:\BonFire Softwares\dotNet\BonfireSoftwares\Engrande\Engrande.Contract\bin\Debug\EntityFramework.SqlServer.dll
+D:\BonFire Softwares\dotNet\BonfireSoftwares\Engrande\Engrande.Contract\bin\Debug\EntityFramework.xml
+D:\BonFire Softwares\dotNet\BonfireSoftwares\Engrande\Engrande.Contract\bin\Debug\EntityFramework.SqlServer.xml
+D:\BonFire Softwares\dotNet\BonfireSoftwares\Engrande\Engrande.Contract\obj\Debug\Engrande.Contract.csprojResolveAssemblyReference.cache
+D:\BonFire Softwares\dotNet\BonfireSoftwares\Engrande\Engrande.Contract\bin\Debug\Engrande.Entities.dll
+D:\BonFire Softwares\dotNet\BonfireSoftwares\Engrande\Engrande.Contract\bin\Debug\Engrande.Entities.pdb

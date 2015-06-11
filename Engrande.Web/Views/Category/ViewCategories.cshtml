@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "ViewCategories";
+}
+
+<h2>ViewCategories</h2>
+
+<div class="row">
+    <div class="small-12 medium-12 large-12 columm">
+        <table id="categoriesTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Parent Name</th>
+                    <th>Status</th>
+                    <th>Modified Date</th>
+                    <th>Modified By</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#categoriesTable').dataTable({
+            "serverSide": true,
+            "ajax": "@Url.Action("GetCategories", "Category")",
+            "columns": [
+                    
+                    {"data": "Name"},
+                    {"data": "Description"},
+                    {"data": "ParentName"},
+                    {"data": "Status"},
+                    {"data": "ModifiedDate"},
+                    {"data": "ModifiedBy"}
+                ]
+        });
+    });
+</script>
+

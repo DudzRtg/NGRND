@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fd0883fb078f4ac6a3b8094504dcc390" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="EngrandeModel.Category" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="EngrandeModel.Menu" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EngrandeModel.Price" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="EngrandeModel.PriceType" Width="1.5" PointX="5.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EngrandeModel.PriceUnit" Width="1.5" PointX="5.25" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EngrandeModel.Status" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <AssociationConnector Association="EngrandeModel.fk_cat_menu" ManuallyRouted="false" />
+        <AssociationConnector Association="EngrandeModel.fk_cat_stat" ManuallyRouted="false" />
+        <AssociationConnector Association="EngrandeModel.fk_cat_subcat" ManuallyRouted="false" />
+        <AssociationConnector Association="EngrandeModel.fk_menu_price" ManuallyRouted="false" />
+        <AssociationConnector Association="EngrandeModel.fk_type_price" ManuallyRouted="false" />
+        <AssociationConnector Association="EngrandeModel.fk_unit_price" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="EngrandeModel.ErrorLog" Width="1.5" PointX="0.75" PointY="5.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
