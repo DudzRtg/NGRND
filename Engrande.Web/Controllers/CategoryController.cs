@@ -13,9 +13,11 @@ namespace Engrande.Web.Controllers
     public class CategoryController : BaseController
     {
         private readonly ICategoryService categoryService;
+        private readonly IUnitOfWork unitOfWork;
 
-        public CategoryController(ICategoryService category)
+        public CategoryController(IUnitOfWork uow, ICategoryService category)
         {
+            unitOfWork = uow;
             categoryService = category;
         }
         
@@ -32,38 +34,6 @@ namespace Engrande.Web.Controllers
         {
             return View();
         }
-
-        [HttpGet]
-        public ActionResult GetCategories()
-        {
-
-
-            return Json(new { data = GetAllCategories() }, JsonRequestBehavior.AllowGet);
-        }
-
-
-        #region Method Helpers
-
-        private List<CategoryViewModel> GetAllCategories()
-        {
-            var result = from c in categoryService.GetCategoriesList(null, null)
-                         select new CategoryViewModel()
-                         {
-                             Key = c.Id,
-                             Name = c.Name,
-                             Description = c.Description,
-                             ParentName = c.ParentName,
-                             Status = c.StatusName,
-                             ModifiedDate = c.ModifiedDate.ToString(),
-                             ModifiedBy = c.ModifiedBy
-                         };
-
-            return result.ToList();
-        }
-
-        #endregion
-
-
 
         [HttpGet]
         public ActionResult AddCategory()

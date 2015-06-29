@@ -28,7 +28,18 @@
     $(document).ready(function () {
         $('#categoriesTable').dataTable({
             "serverSide": true,
-            "ajax": "@Url.Action("GetCategories", "Category")",
+            "searching": false,
+            "ordering": false,
+            "info": false,
+            "lengthChange": false,
+            "ajax": {
+                "url": "@Url.Action("GetCategoriesForDT", "Ajax")",
+                "type": "POST",
+                "data": function (dt) {
+                    return JSON.stringify(dt);
+                },
+                "dataSrc": 'Data'
+                },
             "columns": [
                     
                     {"data": "Name"},

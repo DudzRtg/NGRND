@@ -9,10 +9,10 @@ namespace Engrande.Web.Models
     {
         public string Status { get; set; }
 
-        public T SingleData { get; set; }
-
-        public IEnumerable<T> ListData { get; set; }
+        public IEnumerable<T> Data { get; set; }
 
         public string Message { get; set; }
+
+        public int TotalCount { get; set; }
     }
 }
